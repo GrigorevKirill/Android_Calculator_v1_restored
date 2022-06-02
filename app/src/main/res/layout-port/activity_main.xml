@@ -202,7 +202,7 @@
                 style="@style/calc_button_port"
                 android:layout_height="wrap_content"
                 android:background="@drawable/buttonanimation"
-                android:text="," />
+                android:text="." />
 
             <Button
                 android:id="@+id/button_0"

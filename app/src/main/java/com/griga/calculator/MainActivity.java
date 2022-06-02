@@ -217,7 +217,7 @@ public class MainActivity extends AppCompatActivity {
         button_point.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                text_input.setText(text_input.getText() + ",");
+                text_input.setText(text_input.getText() + ".");
                 vibrator.vibrate(50);
                 ACbutton();
             }
