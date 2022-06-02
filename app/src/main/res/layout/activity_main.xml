@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:menu="@menu/menu_main" />
+
+
+    <TextView
+        android:id="@+id/text_input"
+        style="@style/input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/divider"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="0"
+        android:layout_marginBottom="-130dp"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="-91dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button_AC"
+                style="@style/math_button_port"
+                android:background="@drawable/buttonanimation"
+                android:text="AC" />
+
+
+            <Button
+                android:id="@+id/button_C"
+                style="@style/math_button_port"
+                android:background="@drawable/backspace"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button_left_bracket"
+                style="@style/calc_button_port"
+                android:background="@drawable/buttonanimation"
+                android:text="(" />
+
+
+            <Button
+                android:id="@+id/button_right_bracket"
+                style="@style/calc_button_port"
+                android:background="@drawable/buttonanimation"
+                android:text=")" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_1"
+                style="@style/calc_button_port"
+                android:background="@drawable/buttonanimation"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button_2"
+                style="@style/calc_button_port"
+                android:background="@drawable/buttonanimation"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/button_3"
+                style="@style/calc_button_port"
+                android:background="@drawable/buttonanimation"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/button_plus"
+                style="@style/math_button_port"
+                android:background="@drawable/buttonanimation"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_4"
+                style="@style/calc_button_port"
+                android:background="@drawable/buttonanimation"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/button_5"
+                style="@style/calc_button_port"
+                android:background="@drawable/buttonanimation"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/button_6"
+                style="@style/calc_button_port"
+                android:background="@drawable/buttonanimation"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/button_minus"
+                style="@style/math_button_port"
+                android:background="@drawable/buttonanimation"
+                android:text="-" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_7"
+                style="@style/calc_button_port"
+                android:background="@drawable/buttonanimation"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/button_8"
+                style="@style/calc_button_port"
+                android:background="@drawable/buttonanimation"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/button_9"
+                style="@style/calc_button_port"
+                android:background="@drawable/buttonanimation"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/button_multiple"
+                style="@style/math_button_port"
+                android:background="@drawable/buttonanimation"
+                android:text="x" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_point"
+                style="@style/calc_button_port"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonanimation"
+                android:text="." />
+
+            <Button
+                android:id="@+id/button_0"
+                style="@style/calc_button_port"
+                android:background="@drawable/buttonanimation"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/button_divide"
+                style="@style/math_button_port"
+                android:background="@drawable/buttonanimation"
+                android:text="÷" />
+
+            <Button
+                android:id="@+id/button_equals"
+                style="@style/math_button_port"
+                android:background="@drawable/equalsbutton"
+                android:text="="
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/divider2"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="110dp"
+        android:background="#FF8C00" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:background="?android:attr/listDivider" />
+
+
+
+</RelativeLayout>
+
+
+
